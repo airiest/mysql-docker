@@ -8,8 +8,8 @@ services:
         - "3306:3306"
     volumes:
         - ./db/mysql_init:/docker-entrypoint-initdb.d   # 初期データ
-        - ./db/mysql_data:/var/lib/mysql    # データ永続化
-        - ./db/my.cnf:/etc/mysql/my.cnf
+        - ./db/mysql_data:/var/lib/mysql                # データ永続化
+        - ./db/my.cnf:/etc/mysql/my.cnf                 # 設定
     restart: always
     environment:
         MYSQL_ROOT_PASSWORD: admin
