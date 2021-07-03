@@ -15,3 +15,10 @@ $ mysql -u root -padmin
 ```
 $ mysql -u user -h {host名} -ppassword
 ```
+
+## SQLAlchemyサンプル
+SQLAlchemyを利用したDB操作サンプルコードです。  
+
+```
+$ python sql.py
+```
